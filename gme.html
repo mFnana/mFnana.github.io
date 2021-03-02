@@ -51,7 +51,7 @@
       height: 40px;
       background-color: none;
       position: relative;
-      top: 118px;
+      top: 11px;
       left: 30px;
     }@keyframes jump{
       0%{
@@ -72,7 +72,7 @@
       animation: kkt 1s infinite linear;
     }@keyframes kkt{
       0%{
-        left: 100%;
+        left: 99%;
       }
       100%{
         left: 0%;
@@ -137,8 +137,7 @@
     if(btn.onclick){
       let c = a * 1 - 1;
       scr.innerHTML=c;
-    }
-    }
+      if (a == 0){for(var i=0; i < 5;i++){alert("anda menang!!!");};document.location="hasil akhir.html"}}
     setInterval(function() {
   const hscr = 50-score.innerText;
   let k = parseInt(window.getComputedStyle(jmp).getPropertyValue("top"));
