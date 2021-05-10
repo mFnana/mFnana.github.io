@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      getTime
+    </title>
+    <style>
+      body{
+        background: url('https://i.ibb.co/27LG5d0/op.gif');
+        background-repeat: no-repeat;
+        background-size: 1024px 2000px;
+      }#cont{
+        width: 500px;
+        border: solid 10px #f7a5b6;
+        background: #888888a6;
+        border-radius: 20px;
+        color: white;
+        font-family: "Lucida Console", "Courier New", monospace;
+        padding: 10px;
+      }#hr{
+        font-size: 5rem;
+      }#dy{
+        font-size: 2rem;
+      }#o{
+        background: none;
+        border: solid 1px #97979700;
+      }
+    </style>
+  </head>
+<body>
+    <br>
+    <br>
+    <center>
+    <button onclick="document.location='https://www.google.com/?hl=id'" id="o">
+      <img src="https://i.ibb.co/ykRDgtq/op.jpg" alt="op" border="0" width="150" height="150">
+    </button>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="cont">
+    <center>
+    <div id="hr"></div>
+    </center>
+    <div id="dy"></div>
+    </div>
+  <meta name="viewport" content="width=1024">
+  <script type="text/javascript" charset="utf-8">
+    var d = document.getElementById("hr");
+    var l = document.getElementById("dy");
+    setInterval(()=>{
+    let j = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+    let h = new Date().getDate();
+    let b = new Date().getMonth();
+    let t = new Date().getFullYear();
+    var o;
+    var x;
+    var y;
+    if(parseInt(s)<10){
+      var kk = "0";
+      o = kk+s;
+    }else{
+      o = s;
+    }
+    if(parseInt(m)<10){
+      var kk = "0";
+      x = kk+m;
+    }else{
+      x = m;
+    }
+    if(parseInt(j)<10){
+      var kk = "0";
+      y = kk+j;
+    }else{
+      y = j;
+    }
+    var no = y+":"+x+":"+o;
+    var op = Array(2).fill('\xa0').join('')+h+"/"+b+"/"+t;
+    d.innerHTML=no;
+    l.innerHTML=op;
+    },10)
+  </script>
+</body>
+</html>
