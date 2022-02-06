@@ -40,6 +40,7 @@
     </style>
   </head>
 <body>
+    <div id="console" style="width: 40px;"></div>
     <div id="iuy">CREATED BY : MOCHI F. NANA</div><br>
     <button onclick="document.location='https://www.google.com/?hl=id'" id="o">
       <img src="https://i.ibb.co/ykRDgtq/op.jpg" alt="op" border="0" id="iop">
@@ -53,6 +54,9 @@
     </div>
   <meta name="viewport" content="width=1024">
   <script type="text/javascript" charset="utf-8">
+    cons=(outP)=>{
+       document.getElementById("console").innerHTML=outP;
+    }
     var d = document.getElementById("hr");
     var l = document.getElementById("dy");
     var we = document.getElementById("cont");
@@ -87,8 +91,6 @@
     var op = Array(3).fill('\xa0').join('')+h+"/"+b+"/"+t;
     d.innerHTML=no;
     l.innerHTML=op;
-    
-    
     
     var li = screen.width;
     console.log(li)
