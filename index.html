@@ -72,7 +72,6 @@
     let t = new Date().getFullYear();
     var o,x,y;
     var kk = "0";
-    conso(b)
     if(parseInt(s)<10){
       o = kk+s;
     }else{
@@ -89,7 +88,7 @@
       y = j;
     }
     var no = y+":"+x+":"+o;
-    var op = Array(3).fill('\xa0').join('')+h+"/"+b+"/"+t;
+    var op = Array(3).fill('\xa0').join('')+h+"/"+(b+1)+"/"+t;
     d.innerHTML=no;
     l.innerHTML=op;
     
